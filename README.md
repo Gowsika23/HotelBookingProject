@@ -250,6 +250,16 @@ ng serve
 
 ---
 
+##Screenshots
+<img width="1920" height="1080" alt="Screenshot (140)" src="https://github.com/user-attachments/assets/f3cce522-34b6-4fca-9b33-63217c6a101e" />
+
+<img width="1920" height="1080" alt="Screenshot (139)" src="https://github.com/user-attachments/assets/87649b51-bba3-4ea9-b6d9-bc3fdbde8f86" />
+<img width="1920" height="1080" alt="Screenshot (138)" src="https://github.com/user-attachments/assets/25624881-b9d2-41f2-b784-cbc47560fa8d" />
+<img width="1920" height="1080" alt="Screenshot (137)" src="https://github.com/user-attachments/assets/1f935380-a432-43eb-88e2-fe141c77f799" />
+<img width="1920" height="1080" alt="Screenshot (136)" src="https://github.com/user-attachments/assets/130a6062-bd6a-44a8-8ab4-8c33eb72b021" />
+<img width="1920" height="1080" alt="Screenshot (135)" src="https://github.com/user-attachments/assets/0ead74ea-c5de-4f05-ad2c-7f5ec5c1170b" />
+
+
 ## Author
 
 Developed by **Gowsika**
