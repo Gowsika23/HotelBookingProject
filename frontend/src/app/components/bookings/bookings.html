@@ -1,0 +1,113 @@
+<div class="booking-container">
+
+<div
+class="booking-card"
+
+*ngFor=
+"let booking
+of bookings">
+
+<h2>
+
+🏨 {{booking.hotelName}}
+
+</h2>
+
+<p>
+
+<b>🛏 Room:</b>
+
+{{booking.roomType}}
+
+</p>
+
+<p>
+
+<b>👤 Customer:</b>
+
+{{booking.customerName}}
+
+</p>
+
+<p>
+
+<b>📞 Phone:</b>
+
+{{booking.phone}}
+
+</p>
+
+<p>
+
+<b>👥 Guests:</b>
+
+{{booking.personsCount}}
+
+</p>
+
+<p>
+
+<b>🕒 Stay:</b>
+
+{{booking.stayType}}
+
+</p>
+
+<p>
+
+<b>📅 Check In:</b>
+
+{{booking.checkInDate
+| date:'dd-MM-yyyy'}}
+
+{{booking.checkInTime}}
+
+</p>
+
+<p>
+
+<b>📅 Check Out:</b>
+
+{{booking.checkOutDate
+| date:'dd-MM-yyyy'}}
+
+{{booking.checkOutTime}}
+
+</p>
+
+<p
+class="price-tag">
+
+₹{{booking.price}}
+
+</p>
+
+<p>
+
+<span
+
+[class.status-booked]=
+"booking.status=='Booked'"
+
+[class.status-cancelled]=
+"booking.status=='Cancelled'">
+
+{{booking.status}}
+
+</span>
+
+</p>
+
+<button
+class="cancel-btn"
+
+(click)="cancelBooking(
+booking.id)">
+
+Cancel Booking
+
+</button>
+
+</div>
+
+</div>

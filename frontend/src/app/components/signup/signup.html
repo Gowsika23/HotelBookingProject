@@ -1,0 +1,80 @@
+<div class="signup-overlay">
+
+<div class="signup-card">
+
+<h2>
+
+Create Account
+
+</h2>
+
+<input
+class="form-input"
+
+type="text"
+
+placeholder="Enter Name"
+
+[(ngModel)]="name">
+
+<div class="error">
+
+{{nameError}}
+
+</div>
+
+<input
+class="form-input"
+
+type="email"
+
+placeholder="Enter Email"
+
+[(ngModel)]="email">
+
+<div class="error">
+
+{{emailError}}
+
+</div>
+
+<input
+class="form-input"
+
+type="password"
+
+placeholder="Enter Password"
+
+[(ngModel)]="password">
+
+<div class="error">
+
+{{passwordError}}
+
+</div>
+
+<input
+class="form-input"
+
+type="password"
+
+placeholder="Confirm Password"
+
+[(ngModel)]="confirmPassword">
+
+<div class="error">
+
+{{confirmPasswordError}}
+
+</div>
+
+<button
+(click)="signup()">
+
+Signup
+
+</button>
+
+</div>
+
+</div>

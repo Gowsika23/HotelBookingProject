@@ -1,0 +1,80 @@
+<div class="auth-container">
+
+<div class="left-section">
+
+<h1>
+Welcome To
+Luxury Hotel Booking
+</h1>
+
+<p>
+Discover premium hotels,
+luxury stays and seamless
+booking experience.
+</p>
+
+</div>
+
+<div class="right-section">
+
+<div class="login-card">
+
+<h2>
+Login
+</h2>
+
+<input
+type="email"
+
+placeholder="Enter Email"
+
+[(ngModel)]="email">
+
+<p class="error">
+{{emailError}}
+</p>
+
+<input
+type="password"
+
+placeholder="Enter Password"
+
+[(ngModel)]="password">
+
+<p class="error">
+{{passwordError}}
+</p>
+
+<button
+(click)="login()">
+
+Login
+
+</button>
+
+<p>
+
+New User?
+
+<span
+class="signup-link"
+
+(click)="showSignup=true">
+
+Signup Here
+
+</span>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+@if(showSignup)
+{
+<app-signup>
+</app-signup>
+}

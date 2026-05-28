@@ -1,0 +1,139 @@
+<div class="room-page">
+
+<div class="room-card">
+
+<div class="content">
+
+<h1>
+{{hotel.hotelName}}
+</h1>
+
+<label>
+Select Room
+</label>
+
+<select
+[(ngModel)]="selectedRoom">
+
+<option
+*ngFor=
+"let room of rooms"
+
+[ngValue]="room">
+
+{{room.roomType}}
+
+₹{{room.price}}
+
+Available:
+{{room.availabilityCount}}
+
+</option>
+
+</select>
+
+<label>
+Customer Name
+</label>
+
+<input
+[(ngModel)]="customerName">
+
+<label>
+Phone
+</label>
+
+<input
+[(ngModel)]="phone">
+
+<label>
+Guests Count
+</label>
+
+<input
+type="number"
+
+[(ngModel)]="personsCount">
+
+<label>
+Stay Type
+</label>
+
+<select
+[(ngModel)]="stayType">
+
+<option>
+Full Day
+</option>
+
+<option>
+Hourly
+</option>
+
+</select>
+
+<label>
+Check In Date
+</label>
+
+<input
+type="date"
+
+[(ngModel)]="checkInDate">
+
+<label>
+Check In Time
+</label>
+
+<input
+type="time"
+
+[(ngModel)]="checkInTime">
+
+<label>
+Check Out Date
+</label>
+
+<input
+type="date"
+
+[(ngModel)]="checkOutDate">
+
+<label>
+Check Out Time
+</label>
+
+<input
+type="time"
+
+[(ngModel)]="checkOutTime">
+
+<button
+type="button"
+
+(click)="calculatePrice()">
+
+Calculate Price
+
+</button>
+
+<h2>
+
+Total Price:
+
+₹{{totalPrice}}
+
+</h2>
+
+<button
+(click)="confirmBooking()">
+
+Confirm Booking
+
+</button>
+
+</div>
+
+</div>
+
+</div>

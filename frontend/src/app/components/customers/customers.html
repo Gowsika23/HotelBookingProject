@@ -1,0 +1,123 @@
+<div class="customer-page">
+
+<div class="top-card">
+
+<h1>
+
+👥 Hotel Customers
+
+</h1>
+
+<select
+[(ngModel)]="selectedHotelId"
+
+(change)="loadCustomers()">
+
+<option
+value="0">
+
+Select Hotel
+
+</option>
+
+<option
+*ngFor=
+"let hotel of hotels"
+
+[value]="hotel.id">
+
+{{hotel.hotelName}}
+
+</option>
+
+</select>
+
+</div>
+
+<div class="cards-container">
+
+<div
+class="customer-card"
+
+*ngFor=
+"let customer
+of customers">
+
+<h2>
+
+{{customer.customerName}}
+
+</h2>
+
+<p>
+
+📞 {{customer.phone}}
+
+</p>
+
+<p>
+
+🏨
+{{customer.hotelName}}
+
+</p>
+
+<p>
+
+🛏️
+{{customer.roomType}}
+
+</p>
+
+<p>
+
+👤 Guests:
+{{customer.personsCount}}
+
+</p>
+
+<p>
+
+⏰ Stay:
+{{customer.stayType}}
+
+</p>
+
+<p>
+
+📅 Check-In:
+
+{{customer.checkInDate}}
+
+{{customer.checkInTime}}
+
+</p>
+
+<p>
+
+📅 Check-Out:
+
+{{customer.checkOutDate}}
+
+{{customer.checkOutTime}}
+
+</p>
+
+<p>
+
+💰 ₹{{customer.price}}
+
+</p>
+
+<span
+class="status">
+
+{{customer.status}}
+
+</span>
+
+</div>
+
+</div>
+
+</div>

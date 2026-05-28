@@ -1,0 +1,11 @@
+@if(!isLoggedIn)
+{
+    <app-login>
+    </app-login>
+}
+
+@if(isLoggedIn)
+{
+    <app-dashboard>
+    </app-dashboard>
+}
